@@ -39,7 +39,3 @@ def get_vector_db_retriever():
     vectorstore.persist()
     print(f"Indexed {len(doc_splits)} document chunks")
     return vectorstore.as_retriever(lambda_mult=0)
-
-
-# Initialize retriever
-retriever = get_vector_db_retriever()
